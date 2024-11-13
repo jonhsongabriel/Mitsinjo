@@ -1,0 +1,122 @@
+
+
+.kl-nav {
+
+    background-color: #6a6917;
+
+   color:#eeeb7a ;
+
+ }
+.kl-title
+{
+    color: #eeeb7a;
+}
+ .kl-principale-bg
+ {
+    background-color: #6a6917;
+    color: #000000;
+ }
+
+.nav-link
+{
+    color: #eeeb7a;
+}
+.nav-link:hover, .nav-link:active, .nav-link.active
+{
+    color: red;
+    text-decoration: underline;
+}
+
+
+.kl-foot
+
+{
+
+    background-color: #0B5269;
+
+    color: white;
+
+}
+
+
+
+.kl-bg
+
+{
+
+    background-color:#003366;
+
+    color:white;
+
+}
+
+  
+
+
+        .kl-foot {
+
+            background-color: #0B5269;
+
+             color: white;
+
+            padding-top: 6em;
+
+            width: 100%;
+
+        }
+
+
+
+        .carousel-item img {
+
+            height: 35em;
+
+            object-fit: cover;
+
+        }
+
+
+
+        .content {
+
+            margin-top: 3.125em; /* Ajouter une marge pour éviter de chevaucher l'en-tête */
+
+            padding: 3em;
+
+        }
+
+.background-section {
+
+    background-image: url('../mitsinjo/img2.jpg');
+
+    background-position: center; /* Centre l'image horizontalement et verticalement */
+
+    height: 25em; /* Hauteur de la section, ajustez selon vos besoins */
+
+    color: white; /* Couleur du texte à l'intérieur de la section */
+
+    text-align: center; /* Centre le texte horizontalement */
+
+    padding: 3.125em; /* Espace intérieur de la section */
+
+  }
+
+  .realisation {
+
+    background-image: url('../mitsinjo/madagascar.jpg');
+
+    background-size: cover; /* Ajuste la taille de l'image pour couvrir toute la section */
+
+    background-position: center; /* Centre l'image horizontalement et verticalement */
+
+    height: 25em; /* Hauteur de la section, ajustez selon vos besoins */
+
+    color: white; /* Couleur du texte à l'intérieur de la section */
+
+    text-align: center; /* Centre le texte horizontalement */
+
+    padding: 3.125em; /* Espace intérieur de la section */
+
+  }
+
+ 
