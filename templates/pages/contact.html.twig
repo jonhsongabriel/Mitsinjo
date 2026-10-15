@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contact | Les Amis de l'École Mitsinjo{% endblock %}
+
+{% block body %}
+<section class="page-hero contact-hero">
+    <div class="container page-hero-content">
+        <p class="eyebrow hero-eyebrow"><span></span> À votre écoute</p>
+        <h1>Un mot, une idée,<br><em>un premier pas.</em></h1>
+        <p>Vous souhaitez soutenir l'école, proposer votre aide ou simplement en savoir plus ? Écrivez-nous.</p>
+    </div>
+</section>
+
+<section class="section-pad contact-section">
+    <div class="container contact-grid">
+        <div class="contact-aside">
+            <p class="eyebrow"><span></span> Parlons-en</p>
+            <h2>Le soutien prend<br>plusieurs formes.</h2>
+            <p>Un don, du bénévolat, du matériel ou une idée : chaque contribution peut améliorer le quotidien des élèves. Nous serons heureux d'échanger avec vous.</p>
+            <div class="contact-detail"><span class="detail-icon"><i class="fa-regular fa-envelope" aria-hidden="true"></i></span><div><small>Écrivez-nous</small><a href="mailto:association.ecole.mitsimbina@gmail.com">association.ecole.mitsimbina@gmail.com</a></div></div>
+            <div class="contact-detail"><span class="detail-icon"><i class="fa-solid fa-phone" aria-hidden="true"></i></span><div><small>Appelez-nous</small><a href="tel:+261344640412">+261 34 46 404 12</a></div></div>
+        </div>
+        <div class="contact-form-wrap">
+            {{ form_start(form, {attr: {class: 'contact-form'}}) }}
+                <div class="form-row">
+                    <div class="form-field">{{ form_label(form.name) }}{{ form_widget(form.name, {attr: {class: 'form-control', autocomplete: 'family-name', placeholder: 'Votre nom'}}) }}{{ form_errors(form.name) }}</div>
+                    <div class="form-field">{{ form_label(form.firstName) }}{{ form_widget(form.firstName, {attr: {class: 'form-control', autocomplete: 'given-name', placeholder: 'Votre prénom'}}) }}{{ form_errors(form.firstName) }}</div>
+                </div>
+                <div class="form-row">
+                    <div class="form-field">{{ form_label(form.email) }}{{ form_widget(form.email, {attr: {class: 'form-control', autocomplete: 'email', placeholder: 'vous@exemple.com'}}) }}{{ form_errors(form.email) }}</div>
+                    <div class="form-field">{{ form_label(form.telephone) }}{{ form_widget(form.telephone, {attr: {class: 'form-control', autocomplete: 'tel', placeholder: '+261'}}) }}{{ form_errors(form.telephone) }}</div>
+                </div>
+                <div class="form-field">{{ form_label(form.address) }}{{ form_widget(form.address, {attr: {class: 'form-control', autocomplete: 'street-address', placeholder: 'Votre adresse'}}) }}{{ form_errors(form.address) }}</div>
+                <div class="form-field">{{ form_label(form.message) }}{{ form_widget(form.message, {attr: {class: 'form-control', placeholder: 'Comment pouvons-nous vous aider ?'}}) }}{{ form_errors(form.message) }}</div>
+                <button class="button button-dark" type="submit">Envoyer le message <span aria-hidden="true">↗</span></button>
+            {{ form_end(form) }}
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Réalisations | Les Amis de l'École Mitsinjo{% endblock %}
+
+{% block body %}
+<section class="page-hero achievements-hero">
+    <div class="container page-hero-content">
+        <p class="eyebrow hero-eyebrow"><span></span> Nos actions en images</p>
+        <h1>Des gestes concrets,<br><em>des souvenirs durables.</em></h1>
+        <p>Des moments de partage et des élans de solidarité qui font vivre l'école toute l'année.</p>
+    </div>
+</section>
+
+<section class="section-pad achievements-section">
+    <div class="container">
+        <div class="section-heading"><div><p class="eyebrow"><span></span> La vie de l'école</p><h2>Ensemble, au quotidien.</h2></div><p>Chaque rencontre est une nouvelle occasion d'encourager les élèves et de remercier celles et ceux qui les accompagnent.</p></div>
+        <div class="achievement-grid">
+            <article class="achievement-item achievement-featured"><img src="{{ asset('mitsinjo/img1.jpg') }}" alt="Les élèves de l'école Mitsinjo réunis"><div class="achievement-copy"><p class="eyebrow">Vie de l'école</p><h3>Une nouvelle année à construire ensemble</h3><p>Retrouver ses camarades, découvrir de nouvelles choses et se lancer de nouveaux défis : une rentrée pleine d'élan pour les élèves.</p></div></article>
+            <article class="achievement-item"><img src="{{ asset('mitsinjo/img4.jpg') }}" alt="Les enfants participent aux activités de l'école"><div class="achievement-copy"><p class="eyebrow">Apprendre et jouer</p><h3>Des moments qui rassemblent</h3><p>Les activités partagées nourrissent la confiance, la créativité et l'esprit d'équipe.</p></div></article>
+            <article class="achievement-item"><img src="{{ asset('mitsinjo/fete.jpg') }}" alt="Une célébration à l'école Mitsinjo"><div class="achievement-copy"><p class="eyebrow">Communauté</p><h3>La joie de se retrouver</h3><p>Familles, enseignants et enfants font vivre une école ouverte, chaleureuse et solidaire.</p></div></article>
+        </div>
+    </div>
+</section>
+<section class="support-band"><div class="container support-band-inner"><h2>Vous aussi, prenez part à l'aventure.</h2><a class="button button-light" href="{{ path('contact') }}">Écrivez-nous <span aria-hidden="true">↗</span></a></div></section>
+{% endblock %}
