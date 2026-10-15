@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}À propos | Les Amis de l'École Mitsinjo{% endblock %}
+
+{% block body %}
+<section class="page-hero about-hero">
+    <div class="container page-hero-content">
+        <p class="eyebrow hero-eyebrow"><span></span> Notre association</p>
+        <h1>Une école portée<br><em>par tout un village.</em></h1>
+        <p>À Mitsimbina, nous unissons les familles, les enseignants et la communauté autour d'une conviction : chaque enfant mérite les moyens de s'épanouir.</p>
+    </div>
+</section>
+
+<section class="section-pad">
+    <div class="container about-intro">
+        <div class="about-image"><img src="{{ asset('mitsinjo/madagascar.jpg') }}" alt="Paysage de Madagascar"><span class="image-note">Mitsimbina, Antananarivo</span></div>
+        <div class="about-copy">
+            <p class="eyebrow"><span></span> Qui sommes-nous ?</p>
+            <h2>Un même élan,<br>des chemins qui s'ouvrent.</h2>
+            <p>Les Amis de l'École Mitsinjo est une association engagée auprès des élèves du primaire. Notre action s'enracine dans la solidarité, l'inclusion et le désir commun de voir chaque enfant apprendre dans de bonnes conditions.</p>
+            <p>Avec les familles et l'équipe pédagogique, nous soutenons des initiatives qui enrichissent le quotidien de l'école et renforcent le lien entre les enfants et leur communauté.</p>
+        </div>
+    </div>
+</section>
+
+<section class="values-section section-pad">
+    <div class="container">
+        <div class="section-heading"><div><p class="eyebrow"><span></span> Ce qui nous rassemble</p><h2>Agir avec sens.</h2></div><p>Des actions concrètes, guidées par le respect des enfants et la force du collectif.</p></div>
+        <div class="values-grid">
+            <article class="value-item"><span class="value-number">01</span><h3>Apprendre</h3><p>Encourager la curiosité et créer des occasions d'apprendre au-delà de la salle de classe.</p></article>
+            <article class="value-item"><span class="value-number">02</span><h3>Se soutenir</h3><p>Mobiliser les ressources et les bonnes volontés autour des besoins de l'école.</p></article>
+            <article class="value-item"><span class="value-number">03</span><h3>Grandir</h3><p>Faire une place au sport, à la culture et au bien-être dans le parcours des enfants.</p></article>
+        </div>
+    </div>
+</section>
+{% endblock %}
